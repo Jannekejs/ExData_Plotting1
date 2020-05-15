@@ -25,3 +25,7 @@ with(data_subset, plot(Sub_metering_1 ~Date_and_time, type = "l", xlab = " ", yl
 lines(data_subset$Sub_metering_2~data_subset$Date_and_time, type = "l", col = "red")
 lines(data_subset$Sub_metering_3~data_subset$Date_and_time, type = "l", col = "blue")
 legend("topright", col = c("black", "red", "blue"), lwd = 2, lty= 1, legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+
+## Creating PNG file
+png("plot3.png", width = 480, height = 480)
+dev.off()
